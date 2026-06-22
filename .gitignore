@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+web-app/node_modules/
+
+# Build
+web-app/dist/
+*.tsbuildinfo
+
+# OS / editor
+.DS_Store
+*.local
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# C++ binaries
+*.exe
+*.out
