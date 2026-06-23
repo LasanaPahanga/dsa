@@ -1,6 +1,7 @@
 import type { AlgorithmModule, AlgorithmSummary } from './types';
 import { prefixSumModule } from './prefix-sum';
 import { differenceArrayModule } from './difference-array';
+import { kadaneModule } from './kadane';
 
 /**
  * Central registry — add new algorithms here as you build them.
@@ -10,7 +11,11 @@ import { differenceArrayModule } from './difference-array';
  * 2. Import and append to `algorithmModules` below
  */
 
-const algorithmModules: AlgorithmModule[] = [prefixSumModule, differenceArrayModule];
+const algorithmModules: AlgorithmModule[] = [
+  prefixSumModule,
+  differenceArrayModule,
+  kadaneModule,
+];
 
 export function getAllAlgorithms(): AlgorithmSummary[] {
   return algorithmModules.map(

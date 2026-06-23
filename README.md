@@ -10,7 +10,8 @@ Interactive web app + reference implementations for learning data structures and
 dsa/
 ├── algorithms/          # Reference code + docs (one folder per algorithm)
 │   ├── prefix-sum/
-│   └── difference-array/
+│   ├── difference-array/
+│   └── kadane/
 ├── web-app/             # React visualizer (Vite + TypeScript)
 └── README.md
 ```
@@ -23,7 +24,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) — start with **Prefix Sum**, then try **Difference Array**.
+Open [http://localhost:5173](http://localhost:5173) — start with **Prefix Sum**, then **Difference Array** and **Kadane's Algorithm**.
 
 ## Algorithms included
 
@@ -31,6 +32,7 @@ Open [http://localhost:5173](http://localhost:5173) — start with **Prefix Sum*
 |-----------|----|----|------------|
 | Prefix Sum | ✓ | ✓ | ✓ |
 | Difference Array | ✓ | — | ✓ |
+| Kadane's Algorithm | ✓ | — | ✓ |
 
 More coming: two pointers, sliding window, binary search, sorting, graphs, …
 
@@ -80,6 +82,7 @@ That's it — the home page and `/algorithms/:slug` route pick it up automatical
 python algorithms/prefix-sum/prefix_sum_1d.py
 python algorithms/prefix-sum/prefix_sum_2d.py
 python algorithms/difference-array/difference_array.py
+python algorithms/kadane/kadane.py
 
 # C++ (requires g++)
 g++ -std=c++17 algorithms/prefix-sum/prefix_sum_1d.cpp -o prefix_1d && ./prefix_1d
